@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lemon&family=Open+Sans:wght@800&family=Poppins:wght@900&family=Rubik+Doodle+Shadow&display=swap');
 
 body{
-    background-image: url(images/chapter.jpg);
-    background-color: rgb(97, 5, 5, 0.5); 
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255); 
     height: 100vh;
     width: 100%;
-    background-attachment: fixed;
+}
+h1{
+    margin-inline: 10px;
+    font-family: lemon;
+    font-size: 30px;
+    color:  rgb(97, 5, 5);
 }
 
 .chapters{
     margin: 30px 0px 0px 30px ;
     display: grid;
-    grid-template-columns: repeat(5, 60px);
+    grid-template-columns: repeat(8, 60px);
 }
 
 .chapters button{
-    background-color: transparent;
-    border: 2px solid rgb(97, 5, 5);
-    color: rgb(97, 5, 5);
+    
+    background-color:rgb(205, 203, 203);
+    color: black;
     width: 45px;
     height: 30px;
     font-weight: bold;
-    backdrop-filter: blur(10px);
     margin-block: 5px;
     font-family: lemon;
+    border: none;
+    border-radius: 3px;
 
 }
+
+
+@media (max-width: 480px) {
+   .chapters{
+    grid-template-columns: repeat(5, 60px);
+   }
+  }
+  
+  /* Media query for iPads and Tablets (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+   
+  }

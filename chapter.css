@@ -3,13 +3,8 @@
 body{
     /* background-image: url(images/chapter.jpg); */
     background-color: rgb(255, 255, 255); 
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    background-attachment: fixed;
 }
 
 #chapter-select{
@@ -69,7 +64,21 @@ body{
 
 /* Media query for iPads and Tablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-.button{
-    margin-top: 200px;
-}
+  .chapter-holder{
+    grid-template-columns: repeat(3, 300px);
+    width: 90%;
+    place-content: initial;
+
+    margin-left:  10px;
+   
+  }
+  #chapter-select{
+    margin: 10px 10px;
+  }
+
+  .chapters{
+    width: 180px;
+    height: 30px;
+    font-size: 16px;
+  }
 }
