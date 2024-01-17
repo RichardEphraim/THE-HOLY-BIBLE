@@ -53,8 +53,11 @@ body{
     width: 90%;
     place-content: initial;
 
-    margin-left:  20px;
+    margin-left:  10px;
    
+  }
+  #chapter-select{
+    margin: 10px 10px;
   }
 
   .chapters{
