@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lemon&family=Open+Sans:wght@800&family=Poppins:wght@900&family=Rubik+Doodle+Shadow&display=swap');
+
+body{
+    background-image: url(images/chapter.jpg);
+    background-color: rgb(97, 5, 5, 0.5); 
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.chapters{
+    margin: 30px 0px 0px 30px ;
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+}
+
+.chapters button{
+    background-color: transparent;
+    border: 2px solid rgb(97, 5, 5);
+    color: rgb(97, 5, 5);
+    width: 45px;
+    height: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    margin-block: 5px;
+    font-family: lemon;
+
+}
