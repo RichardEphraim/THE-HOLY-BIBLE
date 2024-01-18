@@ -24,10 +24,29 @@ span{
     margin: 20px 20px 30px 0px;
     width: 200px;
     height: 30px;
- font-size: 20px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: lemon;
     color:  rgb(97, 5, 5);
 }
+
+button{
+    background-color: rgb(97, 5, 5) ;
+    color: white;
+    border: none;
+    margin-inline: 5px;
+}
+
+@media (max-width: 480px) {
+    .verse{
+        width: 90%;
+    }
+  }
+  
+  /* Media query for iPads and Tablets (481px - 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    
+  }
+  
