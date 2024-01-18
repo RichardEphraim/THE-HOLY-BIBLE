@@ -36,14 +36,14 @@ button{
     background-color: rgb(97, 5, 5) ;
     color: white;
     border: none;
-    margin-inline: 5px;
+    margin-inline: 3px;
     padding: 10px 9px;
     font-family: lemon;
     font-size: 10px;
     margin-bottom: 30px;
 }
 .books{
-    margin-right: 50px;
+    margin-right: 6%;
 }
 
 @media (max-width: 480px) {
