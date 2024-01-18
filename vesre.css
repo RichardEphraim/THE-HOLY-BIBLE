@@ -37,6 +37,12 @@ button{
     color: white;
     border: none;
     margin-inline: 5px;
+    padding: 7px 6px;
+    font-family: lemon;
+    font-size: 10px;
+}
+.books{
+    margin-right: 30px;
 }
 
 @media (max-width: 480px) {
