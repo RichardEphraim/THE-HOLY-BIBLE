@@ -18,12 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
                         const chapterData = bookData.chapters.find((chapter) => chapter.chapter === parseInt(selectedChapter, 10));
 
                         if (chapterData) {
+                            // Display chapterData.name only once at the top
+                            verseList.innerHTML = `<div>${chapterData.name}</div>`;
+                            
+                            // Display individual verses
                             const displayVerses = chapterData.verses.map((verse) => {
-                                return `    <p><span style="font-weight: bold; font-size: 30px;">${verse.verse}</span>${verse.text}</p>
-                                `;
+                                return `<p><span style="font-weight: bold; font-size: 20px;">${verse.verse}</span>${verse.text}</p>`;
                             });
 
-                            verseList.innerHTML = displayVerses.join('');
+                            verseList.innerHTML += displayVerses.join('');
                         } else {
                             console.error("Selected chapter not found.");
                         }

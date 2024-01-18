@@ -5,6 +5,8 @@ body{
     background-color: rgb(255, 255, 255); 
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
+
 }
 
 #chapter-select{
@@ -45,7 +47,7 @@ body{
 @media (max-width: 480px) {
   .chapter-holder{
     grid-template-columns: repeat(2, 200px);
-    width: 90%;
+    width: 80%;
     place-content: initial;
 
     margin-left:  10px;
@@ -56,8 +58,8 @@ body{
   }
 
   .chapters{
-    width: 150px;
-    height: 27px;
+    width: 70%;
+    height: 32px;
     font-size: 13px;
   }
 }

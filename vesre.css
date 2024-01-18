@@ -2,13 +2,6 @@
 
 body{
     background-color: white; 
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
 }
 
 /* .verse{
@@ -18,7 +11,23 @@ body{
 } */
 
 .verse {
- width: 50%;
- border: 2px solid black;
+ width: 70%;
+
 margin: 40px 0px 0px 10px ;
+}
+
+span{
+    margin-right: 10px;
+    color: rgb(100, 98, 98);
+}
+.verse div{
+    margin: 20px 20px 30px 0px;
+    width: 200px;
+    height: 30px;
+ font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lemon;
+    color:  rgb(97, 5, 5);
 }
