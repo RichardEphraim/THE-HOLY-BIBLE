@@ -35,7 +35,7 @@ h1{
 
 @media (max-width: 480px) {
    .chapters{
-    grid-template-columns: repeat(5, 60px);
+    grid-template-columns: repeat(6, 60px);
    }
   }
   
