@@ -13,7 +13,7 @@ h1{
 }
 
 .chapters{
-    margin: 30px 0px 0px 30px ;
+    margin: 30px 0px 0px 0px ;
     display: grid;
     grid-template-columns: repeat(8, 60px);
 }
