@@ -18,6 +18,9 @@ body{
     background-color:  rgb(97, 5, 5);
     color: white;
     font-family: lemon;
+    border-radius: 10px;
+    position: fixed;
+    top: 0
 }
 
 .chapter-holder{
