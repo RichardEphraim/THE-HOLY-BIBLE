@@ -40,24 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function setupNavigationButtons(selectedBook, currentChapter) {
-        const prevChapterButton = document.createElement('button');
-        prevChapterButton.textContent = 'Previous Chapter';
+        const prevChapterButton = document.getElementById('right')
         prevChapterButton.addEventListener('click', () => {
             const targetChapter = Math.max(currentChapter - 1, 1); // Ensure not to go below chapter 1
             goToChapter(selectedBook, targetChapter);
         });
 
-        const nextChapterButton = document.createElement('button');
-        nextChapterButton.textContent = 'Next Chapter';
+        const nextChapterButton = document.getElementById('left')
         nextChapterButton.addEventListener('click', () => {
             const targetChapter = currentChapter + 1;
             // You may want to set a maximum chapter based on the actual number of chapters in the book
             goToChapter(selectedBook, targetChapter);
         });
 
-        document.body.appendChild(prevChapterButton);
-        document.body.appendChild(nextChapterButton);
-    }
+            }
 
     const queryParams = new URLSearchParams(window.location.search);
     const selectedBook = queryParams.get("book");
