@@ -12,8 +12,11 @@ body{
 
 .verse {
  width: 70%;
-
-margin: 40px 0px 0px 10px ;
+ margin: 40px 0px 0px 10px ;
+}
+.svg{
+    color: white;
+    width: 10px
 }
 
 span{
@@ -32,16 +35,28 @@ span{
     color:  rgb(97, 5, 5);
 }
 
-button{
+.button{
     background-color: rgb(97, 5, 5) ;
     color: white;
-    border: none;
-    margin-inline: 3px;
-    padding: 10px 9px;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: 5px;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 0;
     font-family: lemon;
-    font-size: 10px;
-    margin-bottom: 30px;
 }
+button{
+color: white;
+background-color: transparent;
+border: none;
+}
+
 .books{
     margin-right: 6%;
 }
